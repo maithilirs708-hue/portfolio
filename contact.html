@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Maithili R.S through the accessible contact form.">
+    <meta name="author" content="Maithili R.S">
     <title>Contact Details</title>
 </head>
 <body>
+    <a href="#main-content">Skip to main content</a>
     <header>
         <h1>Contact Me</h1>
         <nav aria-label="Main Navigation">
@@ -13,32 +16,45 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Contact Form</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <br><br>
+    <main id="main-content">
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Form</h2>
+            <p>
+                If you would like to contact me, please fill out the form below. 
+                I will get back to you as soon as possible.
+            </p>
+            <form aria-labelledby="contact-heading">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                         <label for="name">Full Name:</label>
+                         <br>
+                         <input type="text" id="name" name="name" autocomplete="name" required>
+                    </p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <br><br>
+                    <p>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="name" autocomplete="name" required>
+                    </p>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" required></textarea>
-                <br><br>
+                    <p>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                    </p>
                 
-                <button type="submit">Submit</button>
+                    <button type="submit">Submit</button>
+                </fieldset>
             </form>
         </section>
-        </main>
-        <footer>
-            <p>Thank You!</p>
-        </footer>
+    </main>
+    <footer>
+        <p>&copy; 2026 Maithili R.S. All rights reserved.</p>
+    </footer>
 </body>
 </html>

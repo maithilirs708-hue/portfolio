@@ -2,25 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="About Me">
+    <meta name="description" content="Learn more about Maithili R.S, a passionate 
+    web developer and computer science engineering student. Discover her story, interests
+     and what drives her in the world of technology.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maithili R.S">
     <title>About Me</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <h1>About Me</h1>
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>My Story</h2>
+    <main id="main-content">
+        <section aria-labelledby="about-heading">
+            <h2 id="about-heading">Who am I?</h2>
             <p>
                 I'm a passionate web developer with a strong foundation in computer science. 
                 I enjoy creating dynamic and user-friendly websites that provide excellent user 
@@ -28,17 +32,28 @@
             </p>
         </section>
 
-        <section>
-            <h2>My Interests</h2>
-            <p>
-                In my free time, I like to explore new technologies, contribute to open-source projects, and mentor aspiring developers.
-            </p>
+        <section aria-labelledby="education-heading">
+            <h2 id="education-heading">My Education</h2>
+            <article>
+                <h3>Computer Science Engineering</h3>
+                <p>
+                    I am currently pursuing a degree in Computer Science Engineering, where I
+                    have developed a strong foundation in programming and Web development.
+                </p>
+            </article>
         </section>
 
+        <aside aria-labelledby="interests-heading">
+            <h2 id="interests-heading">My Interests</h2>
+           <ul>
+                <li>Web Development</li>
+                <li>Programming</li>
+                <li>Learning new technologies</li>
+            </ul>
     </main>
     <footer>
-        <p>Thank you for visiting my portfolio! Feel free to 
-            reach out if you have any questions or opportunities.
+        <p>
+            &copy; 2026 Maithili R S. All rights reserved.
         </p>
     </footer>
 </body>

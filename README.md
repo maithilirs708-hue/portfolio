@@ -1,10 +1,10 @@
 # portfolio
-This is a portfolio website created using HTML.
+This is a multi-page personal portfolio website created using semantic HTML5.
 
-## Features
--Header section
--About Me
--Skills
+## Pages
+-Home
+-About 
+-Projects
 -Contact section
 
 ## Technologies Used
