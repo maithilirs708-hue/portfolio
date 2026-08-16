@@ -1,55 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal Portfolio website of Maithili R.S 
-    a Computer Science Engineering Student interested in Web Development and Programming.">
-    <meta name="author" content="Maithili R.S">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maithili R.S | Portfolio</title>
+
+    <meta name="description"
+        content="Personal portfolio website of Maithili R S, a Computer Science Engineering student interested in web development and software development.">
+
+    <meta name="author" content="Maithili R S">
+
+    <title>Maithili R S | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header>
-        <h1>Maithili R S</h1>
-        <p>Computer Science Engineering Student </p>
-        <nav aria-label="Main Navigation">
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <div class="brand">
+                <h1>Maithili R S</h1>
+                <p>Computer Science Engineering Student</p>
+            </div>
+
+            <div class="theme-control">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle">Dark Mode</label>
+            </div>
+
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="index.html" aria-current="page">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>
         </nav>
+
     </header>
-    <main id="main-content">
-        <section aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Welcome to My Portfolio</h2>
-            <p>
-                Hello! I'm Maithili R.S, a computer science Engineering student interested
-                in Web Development and Programming.
-            </p>
-            <p>
-                This portfolio showcases my interests, projects and contact information.
-                Feel free to explore and learn more about my work and skills. 
-            </p>
+
+    <main id="main-content" class="container">
+
+        <section class="hero" aria-labelledby="welcome-heading">
+
+            <div class="hero-content">
+
+                <h2 id="welcome-heading">Welcome to My Portfolio</h2>
+
+                <p>
+                    Hello! I am Maithili R S, a Computer Science Engineering
+                    student interested in web development and software development.
+                </p>
+
+                <p>
+                    This portfolio showcases my skills, projects and interests
+                    in the field of technology.
+                </p>
+
+                <a class="button" href="projects.html">View My Projects</a>
+
+            </div>
+
         </section>
 
-        <section aria-labelledby="skills-heading">
-            <h2 id="skills-heading"> My Skills</h2>
-            <article>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                </ul>
-            </article>
+        <section class="skills-section" aria-labelledby="skills-heading">
+
+            <h2 id="skills-heading">My Skills</h2>
+
+            <div class="skills-grid">
+
+                <article class="card">
+                    <h3>Programming Languages</h3>
+
+                    <ul>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>HTML5</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Web Development</h3>
+
+                    <ul>
+                        <li>HTML5 Semantic Elements</li>
+                        <li>Web Accessibility</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </article>
+
+            </div>
+
         </section>
+
     </main>
-    <footer>
-        <p>&copy; 2026 Maithili R S </p>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Maithili R S. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
