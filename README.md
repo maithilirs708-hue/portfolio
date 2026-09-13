@@ -1,4 +1,3 @@
-# Thiranex Internship - Task 2
 
 ## Advanced CSS3 & Responsive Architecture
 
@@ -60,8 +59,6 @@ The Dark Mode option can be selected from the header of each page.
 The website continues to use semantic HTML5 elements, accessible navigation, labels for form controls, keyboard focus styles and a skip-to-content link.
 
 ## Folder Structure
-
-Thiranex-Task-2/
 ├── index.html
 ├── about.html
 ├── projects.html
